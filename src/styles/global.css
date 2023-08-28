@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: var(--body);
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+    border: var(--border);
+    background-color: var(--color-white);
+    padding: 15px 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container {
+    /* max-width: 980px;
+    margin: 0 auto;
+    min-width: 320px; */
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-light);
+    
+}
+
+input:-webkit-autofill {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--color-text);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+
+@media all and (max-width: 1920px) {
+    .container {
+        margin: 0;
+        margin-left: auto;
+        justify-content: flex-start;
+    }
+     
+}
+
+@media all and (max-width: 1440px) {
+    .container {
+       margin: 0 auto;
+       max-width: 1440px;
+       display: flex;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        align-items: inherit;
+    }
+}
+
+@media all and (max-width: 830px) {
+    .container {
+        flex-direction: column;
+    }
+}    
+
+  
