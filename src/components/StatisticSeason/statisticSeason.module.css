@@ -1,307 +1,316 @@
 .season {
-    position: relative;
-    margin-bottom: 28px;
+  position: relative;
+  margin-bottom: 28px;
 }
 
 .season_head {
-    display: flex;
-    flex-direction: row; align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .season_head__title {
-    color: var(--color-text);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    margin-right: 24px;
+  color: var(--color-text);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-right: 24px;
 }
 
 .season_head__tabs_title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
-.season_head__tab_title  {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    width: 110px;
-    color: var(--color-gray);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    transition: color .2s ease;
+.season_head__tab_title {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 110px;
+  color: var(--color-gray);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  transition: color .2s ease;
 }
 
 .season_head__tab_title:hover {
-    color: var(--color-84);
-    transition: color .2s ease;
+  color: var(--color-84);
+  transition: color .2s ease;
 }
 
 .season_head__tab_title::after {
-    position: absolute;
-    content: '';
-    bottom: 0px;
-    height: 3px;
-    left: -101%;
-    width: 100%;
-    background-color: var(--color-gray);
-    transition: left .5s ease
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  height: 3px;
+  left: -101%;
+  width: 100%;
+  background-color: var(--color-gray);
+  transition: left .5s ease
 }
 
 .season_head__tab_title.active::after {
-    background-color: var(--color-text);
-    left: 0;
-    transition: left .5s ease
+  background-color: var(--color-text);
+  left: 0;
+  transition: left .5s ease
 }
 
 
 .season_head__tab_title.active {
-    color: var(--color-text);
-    transition: color .2s ease
+  color: var(--color-text);
+  transition: color .2s ease
 }
 
 .season_head__tab_title:not(:last-child) {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .season__wrapper {
-    width: 100%;
-    position: relative;
-    height: 155px;
+  width: 100%;
+  position: relative;
+  height: 155px;
 }
 
-.tab__slide{
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    top: 0;
-    left: 3px;
-    transition: opacity .4s ease;
+.tab__slide {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 3px;
+  transition: opacity .4s ease;
 }
-.tab__slide.active{
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .4s ease, visibility .4s ease;
+
+.tab__slide.active {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .4s ease, visibility .4s ease;
 }
+
 .season__list {
-    display: flex;
-    flex-direction: row;
-    width: 101%;
-    height: 100%;
-    overflow: hidden;
-    align-items: center;
-    scroll-behavior: smooth; 
+  display: flex;
+  flex-direction: row;
+  width: 101%;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  scroll-behavior: smooth;
 }
 
 .season__item {
-    background-color: var(--color-white);
-    width: 100px;
-    height: 143px;
-    cursor: pointer;
-    transition: transform 0.2s ease;    
+  background-color: var(--color-white);
+  width: 100px;
+  height: 143px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .season__item:hover {
-    transform: scale(1.02);
-    transition: transform 0.2s ease;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
 }
 
 .season__item:not(:last-child) {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
 .season-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 15px;
-    border-radius: var(--border-radius);
-    flex: 0 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: space-between;
-} 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 15px;
+  border-radius: var(--border-radius);
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+}
 
 .season-item__day {
-    color: var(--color-text);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--color-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .season-item__icon {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .season-item__temp {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .item-temp {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .item-temp__now {
-    color: var(--color-text);
+  color: var(--color-text);
 }
 
 .item-temp__feels-like {
-    color: var(--color-gray);
+  color: var(--color-gray);
 }
 
 .slide__btn {
-    position: absolute;
-    transition: transform 0.2s ease, fill 0.2s ease;
+  position: absolute;
+  transition: transform 0.2s ease, fill 0.2s ease;
 }
 
 .slide__btn svg circle {
-    fill: var(--color-white);
+  fill: var(--color-white);
 }
 
 .slide__btn_left {
-    left: -60px;
-    top: 50px;
+  left: -60px;
+  top: 50px;
 }
+
 .slide__btn_right {
-    right: -60px;
-    top: 50px;
+  right: -60px;
+  top: 50px;
 }
+
 .slide__btn:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 .slide__btn:active svg circle {
-    fill: var(--body);
-    transition: fill 0.2s ease;
+  fill: var(--body);
+  transition: fill 0.2s ease;
 }
 
 .slide__btn:disabled {
-    opacity: 0.3;
-    pointer-events: none;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .error {
-    position: absolute;
-    z-index: 10;
-    width: 101%;
-    height: 100%;
-    background-color: rgba(59, 59, 59, 0.7);
-    border-radius: var(--border-radius);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 0;
+  position: absolute;
+  z-index: 10;
+  width: 101%;
+  height: 100%;
+  background-color: rgba(59, 59, 59, 0.7);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
 }
 
 .error span {
-    position: relative;
-    z-index: 10;
-    color: var(--color-error);
-    font-size: 18px;
+  position: relative;
+  z-index: 10;
+  color: var(--color-error);
+  font-size: 18px;
 }
 
 @media all and (max-width: 1440px) {
-    .season__wrapper {
-        max-width: 612px;
-        margin: 0 auto;
-    }
- }
-
- @media all and (max-width: 1200px) {
-    .season__wrapper {
-        max-width: 490px;
-    }
- }
-
-@media all and (max-width: 976px) { 
-    .season { 
-        margin-bottom: 38px;
-    }
-
-    .season_head {
-        margin-bottom: 14px;
-    }
-    
-    .slide__btn_right {
-        right: -40px;
-        top: 60px;
-    }
-
-    .slide__btn_left {
-        left: -50px;
-        top: 60px;
-    }
+  .season__wrapper {
+    max-width: 612px;
+    margin: 0 auto;
+  }
 }
 
-@media all and (max-width: 830px) { 
-    .season_head {
-        flex-direction: column;
-        margin-bottom: 25px;
-    }
+@media all and (max-width: 1200px) {
+  .season__wrapper {
+    max-width: 490px;
+  }
+}
+
+@media all and (max-width: 976px) {
+  .season {
+    margin-bottom: 38px;
+  }
+
+  .season_head {
+    margin-bottom: 14px;
+  }
+
+  .slide__btn_right {
+    right: -40px;
+    top: 60px;
+  }
+
+  .slide__btn_left {
+    left: -50px;
+    top: 60px;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .season_head {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
 
 
-    .season_head__title {
-        margin: 0;
-        margin-bottom: 30px;
-    }
+  .season_head__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
 
-    .tab_head {
-        width: 100%;
-    }
-    
-    .season_head__tabs_title {
-        justify-content: space-around;
-    }
+  .tab_head {
+    width: 100%;
+  }
 
-    .season__list {
-        flex-direction: column;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        width: 100%;
-    }
+  .season_head__tabs_title {
+    justify-content: space-around;
+  }
 
-  
+  .season__list {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+  }
 
-    .slide__btn {
-        display: none;
-    }
-    .season__wrapper {
-        height: auto;
-    }
+
+
+  .slide__btn {
+    display: none;
+  }
+
+  .season__wrapper {
+    height: auto;
+  }
 }
 
 
 @media all and (max-width: 576px) {
-    .season {
-        margin-bottom: 59px;
-        padding: 0 35px 0 35px;
-    }
-    .season_head {
-        margin-bottom: 36px;
-    }
-    .season__list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .season_head__title {
-        margin-bottom: 27px;
-    }
+  .season {
+    margin-bottom: 59px;
+    padding: 0 35px 0 35px;
+  }
+
+  .season_head {
+    margin-bottom: 36px;
+  }
+
+  .season__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .season_head__title {
+    margin-bottom: 27px;
+  }
 
 }
